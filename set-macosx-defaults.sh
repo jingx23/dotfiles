@@ -40,17 +40,6 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 # in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
-# Set key repeat rate (minimum 1)
-# Off: 300000
-# Slow: 120
-# Fast: 2
-defaults write NSGlobalDomain KeyRepeat -int 1
-
-# Set delay until repeat (in milliseconds)
-# Long: 120
-# Short: 15
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
-
 # Use F1, F2, etc. keys as standard function keys
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
 
